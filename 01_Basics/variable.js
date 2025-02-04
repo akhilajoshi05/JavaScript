@@ -1,3 +1,6 @@
+// variables in js 
+
+
 const accountId= 123456
 let accountGmail="abc@gmail.com"
 var accountPassword ="2121A"
