@@ -64,8 +64,22 @@ const newStr1 = "   dhjdgshf   "
 console.log(newStr1);
 console.log(newStr1.trim());
 
+const url = "https://aj.com/a%30j"
+console.log(url.replace('%30','-'));
+
+console.log(url.includes('aj'));
+console.log(url.includes('vj'));
+
+
 
 // reference for js Strings: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+const gameName1 = new String('ajajak-vj-com')
+console.log(gameName1.split('-'));
+console.log(gameName1.fixed());
+console.log(gameName1.fontcolor('blue'));
+console.log(gameName1.fontsize(4));
+
 
 
 
