@@ -44,3 +44,28 @@ console.log("functionType:",typeof newFunction);
 
 
 // assignment check typeOf of all datatypes 
+
+/**  Types of Memory in JS
+ *  Stack(primitive) and Heap(NON-Primitive)
+ *  for stack copy will be received , for heap reference will come
+ */
+
+let gitname = "ajajk";
+let anotherName= gitname;
+console.log(anotherName);
+console.log(gitname);
+
+anotherName="code"
+console.log(anotherName);
+
+
+// it takes reference 
+let user = {
+    email:"user@gamil.com",
+    upi:"user@ybl"
+}
+
+let userTwo = user;
+userTwo.email= "abc@gamil.com"
+console.log(user.email);
+console.log(userTwo.email);
