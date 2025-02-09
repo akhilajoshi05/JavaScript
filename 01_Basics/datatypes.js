@@ -24,7 +24,7 @@ let state =" "
 let abc = null
 
 /*
-primetive datatypes:
+primetive datatypes:(call by value)
 
 number ==> 2 to power 53
 biint
@@ -34,7 +34,11 @@ null => standalone value (empty value), it is special type
 undefined
 symbol=> unique 
 
-objects:{}
+non primitive( call by reference)
+objects:{}, array, funtions
+
+
+is js is static typed language or dynamically typed language
 */
 console.log(typeof age);
 console.log(typeof abc)
