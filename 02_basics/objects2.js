@@ -67,3 +67,54 @@ const user = [
 user[1].email
 console.log(app);
 console.log(Object.keys(app));
+console.log(Object.values(app));
+console.log(Object.entries(app));
+console.log(app.hasOwnProperty('isLoggedIn'));
+console.log(app.hasOwnProperty('isLogged'));
+
+
+//Array destructuring
+
+const course = {
+    courseName: "JS",
+    price: 1500,
+    courseInstructor:"hitesh"
+}
+
+// course.courseInstructor
+const {courseInstructor}=course
+console.log(courseInstructor);
+
+const {courseInstructor: instructor}=course  // destructuring
+console.log(instructor);
+
+//react concepts
+const navbar = () => {
+
+}
+navbar(company = "ABB")
+
+const navbar1 = ({company}) => {     // destructuring
+
+}
+
+navbar1(company = "ABB")
+
+
+// {
+//     "name":"aj",
+//     "courseName": "JS",
+//     "price":"free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
+
+//online api
+// https://randomuser.me/
+
+// json formatter
+// https://jsonformatter.org/
