@@ -14,6 +14,7 @@ myName()
 function addTwoNums(num1, num2){
     console.log(num1 + num2); 
 }
+
 //function calling or executing
 addTwoNums() // NAN
 addTwoNums(2,4)     // numbers or characters passed inside function calling are called as arguments
@@ -21,8 +22,6 @@ addTwoNums(2,"a")
 
 const result = addTwoNums(4,5)
 console.log(result);
-
-
 
 function addTwoNums1(num1, num2){
     let sum = num1+num2
@@ -130,4 +129,44 @@ function calculateCartPriceWithRestOpAndValues(val1, val2, ...num){
 }
 console.log(calculateCartPriceWithRestOpAndValues(422,545,345,7675,435));  // 1st and 2nd values are store in val1 and val2 and remaing are stored in array 
 
+// function with objects
+const user = {
+    userName:"joshi04",
+    price: 122,
+    // prices: 122
+}
 
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.userName} and ${anyobject.price}`);   
+}
+
+handleObject(user)
+console.log(user);
+
+const user1 = {
+    userName:"joshi04",
+    // price: 122,
+    prices: 122
+}
+
+handleObject(user1)
+console.log(user1);
+
+handleObject({
+    userName:"sam",
+    price:342
+})
+
+
+const newArray = [200, 342, 434,344]
+
+function returnValue(getArray){
+    return getArray
+}
+console.log(returnValue(newArray));
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+console.log(returnSecondValue(newArray));
+console.log(returnSecondValue([344,231, 2123, 433, 232]));
