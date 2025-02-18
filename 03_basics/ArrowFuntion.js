@@ -41,3 +41,48 @@ const code = () => {
     console.log(this.username); 
 }
 code()
+/**
+ * Arrow funtion syntax
+ * 
+ * () => {} 
+ * 
+ * const user = () => {} 
+ * 
+ * const sum = (num1, num2) => {
+ *      return num1 + num2 
+ * }
+ */
+
+//basic arrow funtion or explict return, where we are using return explictly
+const sum = (num1, num2) => {        // inside {} return should be used
+    return num1 + num2
+}
+sum(2, 5)
+console.log(sum(6,4));
+
+// implesite return funtion 
+const Add = (num1, num2) => num1 + num2
+Add(2, 5)
+console.log(Add(5,9));
+
+// ( ) is used no need to write return 
+const AddSum = (num1, num2) => (num1 + num2)       // returning numbers
+AddSum(2, 5)
+console.log(AddSum(2,9));
+ 
+// returning objects
+const returningObject = (num1, num2) => ({userName:"hjfdj"})
+returningObject(2, 5)
+console.log(returningObject(5,9));
+
+//writing functions inside loop
+const array = [2,3,4,5,6]
+
+array.forEach(function name(params) {
+    
+})
+
+array.forEach(function () {})
+
+array.forEach( () => {} )
+// array.forEach( () => () )
