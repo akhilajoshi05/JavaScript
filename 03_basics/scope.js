@@ -53,7 +53,7 @@ function one() {
 }
 one()
 
-
+// nested scope
 if (true) {
     const userName = "joshi09 "
     if (userName === "joshi09") {         // does not comapre due to extra space is not there
@@ -76,6 +76,7 @@ if (true) {
 // console.log(userName); // error cannot be accessed outside the scope
 
 // ++++++++++++++++++++++++++ interesting +++++++++++++++++++++++++++++
+addOne(5)  // function can be called befour function declaration also   
 
 function addOne(num) {
     return num + 1
@@ -83,8 +84,11 @@ function addOne(num) {
 addOne(5)
 
 
-// function is also be written as expression as below 
+// function can also be written as expression as below 
+
+// addTwo(5)  // here function cannot be called in expresson function declaration
 const addTwo = function(num) {
     return num + 2
 }
 addTwo(5)
+
