@@ -26,15 +26,44 @@ const map = new Map()
 map.set('In','India')
 map.set('US','USA')
 map.set('UK','United Kingdom')
+map.set('In','India')
+console.log(map);
 
 console.log(map.get('In'));
 map.set('In','Bharath')
+console.log(map);
+
 console.log(map.get('In'));
 console.log(map.size);
 map.delete('UK')
 console.log(map.size);
-console.log(map);
 
 
+// for of loop using map
+
+for (const key of map) {
+    console.log(key);         // prints output in array
+}
 
 
+// destructuring
+for (const [key, value] of map) {
+    console.log(key ,':-' ,value);
+}
+
+
+const myObject = {
+    "game1" :"candy crush",
+    "game2" :"temple run"
+}
+
+const myObject1 = {
+    game1 :'candy crush',
+    game2 :'temple run'
+}
+
+/*  for of loop does not support looping objects   
+for (const [key, value] of myObject) {
+    console.log(key ,':-' ,value);
+}
+*/
