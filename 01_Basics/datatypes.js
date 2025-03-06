@@ -1,3 +1,4 @@
+// 2. Data Types
 /* datatypes in javascript
  strings, integers, boolean
  */
@@ -38,7 +39,18 @@ non primitive( call by reference)
 objects:{}, array, funtions
 
 
-is js is static typed language or dynamically typed language
+Q) Is js is static typed language or dynamically typed language ?
+->JavaScript is a dynamically typed language. This means:
+* You don't need to explicitly declare variable types.
+* The type of a variable is determined at runtime, not at compile time.
+* You can assign different types of values to the same variable.
+
+EXAMPLE: 
+let x = 10; // x is a number
+x = "Hello"; // Now x is a string
+x = true; // Now x is a boolean
+
+* Since JavaScript allows this flexibility, it is not a statically typed language like TypeScript, Java, or C.
 */
 console.log(typeof age);
 console.log(typeof abc)
