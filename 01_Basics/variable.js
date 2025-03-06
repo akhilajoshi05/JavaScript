@@ -1,5 +1,4 @@
-// variables in js 
-
+// 1. variables in js 
 
 const accountId= 123456
 let accountGmail="abc@gmail.com"
@@ -15,7 +14,6 @@ accountCity="bng"
 console.log(accountId);
 console.log([accountGmail, accountPassword,accountCity,accountState]);
 console.table([accountGmail, accountPassword, accountCity, accountState]);
-
 
 /*
 prefer not use var
